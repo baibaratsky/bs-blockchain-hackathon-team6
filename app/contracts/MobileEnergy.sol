@@ -70,6 +70,7 @@ contract MobileEnergy {
     if (msg.sender != oracle) {
       throw;
     }
+
     if (!contracts[_contractHash].initialized) {
       throw;
     }
